@@ -1,0 +1,126 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+}
+	
+body {
+	background-color: gainsboro;
+	position: relative;
+	overflow: hidden;
+}
+
+.mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	display: none;
+	
+	width: 100%;
+	height: 1000px;
+	
+	background-color: rgba(0,0,0,0.5);
+}
+
+.container {
+	position: relative;
+	top: 100px;
+	left: 50%;
+
+	margin-left: -300px;
+	width: 600px;
+	height: 700px;
+}
+
+.header {
+	height: 100px;
+	
+	background-color: blue;
+	color: #fff;
+}
+
+.header > button {
+	width: 600px;
+	height: 100px;
+
+	font-size: 2rem;
+	font-weight: 700;
+	
+	color: #fff;
+	background-color: blue;
+	border: none;
+}
+
+.hidden {
+	position: relative;
+	left: 600px;
+	top: -110px;
+	display: none;
+	z-index: 10;
+	
+	width: 200px;
+	
+	color: #000;
+	background-color: #fff;
+}
+
+.hidden > h4 {
+	margin: 10px 5px;
+}
+
+.hidden > div {
+	margin: 10px 0;
+	height: 50px;
+}
+
+.hidden button {
+	margin: 0 5px;
+	width: 50px;
+	height: 50px;
+	border-radius: 8px;
+	background-color: lavenderblush;
+	border: none;
+}
+
+.btn {
+	border-top: 1px solid #DCDCDC;
+}
+
+.hidden > .btn > button {
+	margin: 10px 8px;
+	width: 80px;
+	height: 30px;
+	
+	background-color: #000000;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+}
+
+.main {
+	height: 600px;
+	position: relative;
+	
+	background-color: #fff;
+}
+
+.inner-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	
+	margin-left: -25px;
+	margin-top: -25px;
+	width: 50px;
+	height: 50px;
+
+	text-align: center;
+	
+	background: blanchedalmond;
+	border-radius: 8px;
+}
+
+.inner-content p {
+	line-height: 50px;
+}
